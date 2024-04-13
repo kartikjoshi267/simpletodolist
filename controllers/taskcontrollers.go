@@ -43,7 +43,7 @@ func CreateTask(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 		w.WriteHeader(http.StatusInternalServerError)
-		_ = json.NewEncoder(w).Encode(bson.M{"error": "Internal server error"})
+		_ = json.NewEncoder(w).Encode(bson.M{"error": err.Error()})
 		return
 	}
 
