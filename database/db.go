@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 
-	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -15,12 +14,6 @@ var TasksCollection *mongo.Collection
 var UsersCollection *mongo.Collection
 
 func init() {
-	err := godotenv.Load(".env")
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
 	var connectionString string = os.Getenv("MONGO_URI")
 	var dbName string = os.Getenv("DB_NAME")
 	var tasksCollectionName string = os.Getenv("TASKS_COLLECTION_NAME")
