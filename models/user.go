@@ -59,8 +59,6 @@ func LoginUser(email string, password string) (string, error) {
 	}
 
 	err = bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
-	fmt.Println(user)
-	fmt.Println(password)
 
 	if err != nil {
 		return "", fmt.Errorf("invalid password")
@@ -78,8 +76,6 @@ func GetUser(token string) (*User, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	fmt.Println(userId)
 
 	var user User
 	objectId, err := primitive.ObjectIDFromHex(userId)

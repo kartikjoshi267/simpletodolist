@@ -74,7 +74,7 @@ func GetUser(w http.ResponseWriter, r *http.Request) {
 	token = strings.Split(strings.TrimSpace(token), " ")[1]
 	user, err := models.GetUser(token)
 	if err != nil {
-		fmt.Println(err, token)
+		fmt.Println(err)
 		w.WriteHeader(http.StatusUnauthorized)
 		_ = json.NewEncoder(w).Encode(bson.M{"error": "Unauthorized"})
 		return
