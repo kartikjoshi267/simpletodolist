@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/kartikjoshi267/simpletodolist/routes"
+	"github.com/kartikjoshi267/simpletodolist/backend/routes"
 )
 
 func main() {

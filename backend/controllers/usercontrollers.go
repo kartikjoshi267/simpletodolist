@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/kartikjoshi267/simpletodolist/models"
+	"github.com/kartikjoshi267/simpletodolist/backend/models"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

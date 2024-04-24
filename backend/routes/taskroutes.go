@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gorilla/mux"
-	"github.com/kartikjoshi267/simpletodolist/controllers"
+	"github.com/kartikjoshi267/simpletodolist/backend/controllers"
 )
 
 func TaskRouter() *mux.Router {

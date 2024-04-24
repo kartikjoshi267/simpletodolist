@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/kartikjoshi267/simpletodolist/database"
-	"github.com/kartikjoshi267/simpletodolist/lib"
+	"github.com/kartikjoshi267/simpletodolist/backend/database"
+	"github.com/kartikjoshi267/simpletodolist/backend/lib"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"golang.org/x/crypto/bcrypt"

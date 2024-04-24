@@ -1,4 +1,4 @@
-module github.com/kartikjoshi267/simpletodolist
+module github.com/kartikjoshi267/simpletodolist/backend
 
 go 1.22.2
 
